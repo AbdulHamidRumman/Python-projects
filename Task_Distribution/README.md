@@ -14,9 +14,10 @@ Solving questions appeared in previous several years is very helpful to take pro
 
 1. Create a excel file (say 'ques_data.xlsx') in the following format:
 
-    |   Year    |   COURSE-1    |   COURSE-2    |
-    |   2018-19 |       8       |       8       |
-    |   2017-18 |       8       |       12      |
+    |   Year   | COURSE-1 | COURSE-2 |
+    |----------|----------|----------|
+    |  2018-19 |    8     |     8    |
+    |  2017-18 |    8     |     12   |
 
 > The first column must be named 'Year'. Otherwise code won't work.
 
