@@ -24,15 +24,18 @@ Solving questions appeared in previous several years is very helpful to take pro
 
 2. Open 'Task_Distribution.ipynb'
 3. Set the value of total number of students:
+
     ```python
     n = 60  # Total number of students is 60
     ```
 4. Set excel file name (Here 'ques_data.xlsx' was used):
+
     ```python
     df = pd.read_excel('ques_data.xlsx').astype({'Year':"string"})
     ```
 5. Run every cells step by step.
 6. At the last cell set Output file name (Here 'output.xlsx' was used) and run the cell:
+
     ```python
     dist.to_excel("output.xlsx",index=False)    # Saves the "dist" dataframe to "output.xlsx" file
     ```
