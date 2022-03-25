@@ -20,7 +20,7 @@ Solving questions appeared in previous several years is very helpful to take pro
     |  2017-18 |    8     |     12   | ... |
     | ... ...  |   ...    |    ...   | ... | 
 
-> **The first column must be named 'Year'. Otherwise code won't work.**
+**The first column must be named 'Year'. Otherwise code won't work.**
 
 2. Open 'Task_Distribution.ipynb'
 3. Set the value of total number of students:
