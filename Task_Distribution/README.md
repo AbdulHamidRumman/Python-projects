@@ -12,7 +12,7 @@ Solving questions appeared in previous several years is very helpful to take pro
 
 ### Procedure
 
-1. Create a excel file (say 'ques_data.xlsx') in the following format:
+1. Create a excel file (say "ques_data.xlsx") in the following format:
 
     |   Year   | COURSE-1 | COURSE-2 | ... |
     |----------|----------|----------|-----|
@@ -22,21 +22,26 @@ Solving questions appeared in previous several years is very helpful to take pro
 
     The first column must be named **'Year'**. Otherwise code won't work.
 
+    In case of optional courses. Create another sheet in the excel file in the following format:
+
+    | Optinal_COURSE-1 | Optinal_COURSE-2 | ... |
+    |------------------|------------------|-----|
+    |        2         |        1         | ... |
+    |        5         |        3         | ... |
+    |        7         |        8         | ... |
+    |       10         |       12         | ... |
+    |      ...         |      ...         | ... |
+
+    **First Column** contains the roll numbers of the students who took **Optional_COURSE-1**
+    **Second Column** contains the roll numbers of the students who took **Optional_COURSE-2**
+
 2. Open 'Task_Distribution.ipynb'
-3. Set the value of total number of students:
+3. Set the total number of students, Question Datafile Name and Output file name in the 2nd Cell:
 
     ```python
-    N = 60  # Total number of students is 60
+    N = 60                          # Total number of students is 60
+    data_file = "ques_data.xlsx"    # Question Datafile name
+    output_file = "output.xlsx"     # Output file name
     ```
-4. Set excel file name (Here 'ques_data.xlsx' was used):
-
-    ```python
-    df = pd.read_excel('ques_data.xlsx').astype({'Year':"string"})
-    ```
-5. Run every cells step by step.
-6. At the last cell set Output file name (Here 'output.xlsx' was used) and run the cell:
-
-    ```python
-    dist.to_excel("output.xlsx",index=False)    # Saves the "dist" dataframe to "output.xlsx" file
-    ```
-   It will save the random distribution data on the same directory. 
+4. Run every cells step by step.
+5. Random distribution data on the same directory in a excel file. 
