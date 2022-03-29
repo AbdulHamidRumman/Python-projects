@@ -26,7 +26,7 @@ Solving questions appeared in previous several years is very helpful to take pro
 3. Set the value of total number of students:
 
     ```python
-    n = 60  # Total number of students is 60
+    N = 60  # Total number of students is 60
     ```
 4. Set excel file name (Here 'ques_data.xlsx' was used):
 
