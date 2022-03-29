@@ -35,6 +35,8 @@ Solving questions appeared in previous several years is very helpful to take pro
     **First Column** contains the roll numbers of the students who took **Optional_COURSE-1**
     **Second Column** contains the roll numbers of the students who took **Optional_COURSE-2**
 
+    **Make sure the optional course datasheet is after the Question Datasheet**
+
 2. Open 'Task_Distribution.ipynb'
 3. Set the total number of students, Question Datafile Name and Output file name in the 2nd Cell:
 
