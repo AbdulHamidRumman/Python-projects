@@ -22,28 +22,12 @@ Solving questions appeared in previous several years is very helpful to take pro
 
     The first column must be named **'Year'**. Otherwise code won't work.
 
-    In case of optional courses. Create another sheet in the excel file in the following format:
-
-    | Optinal_COURSE-1 | Optinal_COURSE-2 | ... |
-    |------------------|------------------|-----|
-    |        2         |        1         | ... |
-    |        5         |        3         | ... |
-    |        7         |        8         | ... |
-    |       10         |       12         | ... |
-    |      ...         |      ...         | ... |
-
-    **First Column** contains the roll numbers of the students who took **Optional_COURSE-1**
-    **Second Column** contains the roll numbers of the students who took **Optional_COURSE-2**
-
-    **Make sure the optional course datasheet is after the Question Datasheet**
-
 2. Open 'Task_Distribution.ipynb'
-3. Set the total number of students, Question Datafile Name and Output file name in the 2nd Cell:
+3. Set the Question Datafile Name and Output file name:
 
     ```python
-    N = 60                          # Total number of students is 60
     data_file = "ques_data.xlsx"    # Question Datafile name
     output_file = "output.xlsx"     # Output file name
     ```
 4. Run every cells step by step.
-5. Random distribution data on the same directory in a excel file. 
+5. Random distribution data will be saved on the same directory in a excel file. 
