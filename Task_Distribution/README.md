@@ -2,38 +2,38 @@
 
 Solving questions appeared in previous several years is very helpful to take proper preparation for term final examination. This short program will distribute all the questions to each student randomly. Throughout the semester if each student solve 3-4 problems, we can combined them at the end and make a solution book. Everyone gets to read the solution book. It will save a lot of time and help us take good preparation for the exam.
 
-### Used Python Packages
+### Requirements
 
-* numpy
-* pandas
-* openpyxl
-* itertools
-* random
+* Python
+* Jupyter Notebook
+* Python Packages and Modules: pandas, openpyxl, itertools, random
 
 ### Procedure
 
-1. Create a excel file (say "ques_data.xlsx") in the following format:
+1. Create an excel file with two sheets:
 
-    |   Year   | MME213 | ME221 | ... |
-    |----------|--------|-------|-----|
-    |  2018-19 |    8   |   8   | ... |
-    |  2017-18 |    8   |  12   | ... |
-    | ... ...  |   ...  | ...   | ... | 
+    * 1st sheet contains the question data in the following format:
 
-    First column containes the **academic sessions**.
-    Rest of the columns containes the **total number of questions appeared**.
+        |   Year   | MME213 | ME221 | ... |
+        |----------|--------|-------|-----|
+        |  2018-19 |    8   |   8   | ... |
+        |  2017-18 |    8   |  12   | ... |
+        | ... ...  |   ...  | ...   | ... | 
 
-2. Create another sheet in the following format:
+        First column containes the **academic sessions**.
+        Rest of the columns containes the **total number of questions appeared in each course**.
+    
+    * 2nd sheet contains the Roll No.'s of the students in the following format:
 
-    | Roll No. |
-    |----------|
-    |    1     |
-    |    2     |
-    |    3     |
-    |    4     |
-    |   ...    |
+        | Roll No. |
+        |----------|
+        |    1     |
+        |    2     |
+        |    3     |
+        |    4     |
+        |   ...    |
 
-3. Make sure the question data sheet is before the roll no. sheet. 
+     **Make sure the question data sheet is before the roll no. sheet**
 
 4. Open 'Task_Distribution.ipynb'
 5. Set the Question Datafile Name and Output file name:
