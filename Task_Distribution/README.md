@@ -14,20 +14,34 @@ Solving questions appeared in previous several years is very helpful to take pro
 
 1. Create a excel file (say "ques_data.xlsx") in the following format:
 
-    |   Year   | COURSE-1 | COURSE-2 | ... |
-    |----------|----------|----------|-----|
-    |  2018-19 |    8     |     8    | ... |
-    |  2017-18 |    8     |     12   | ... |
-    | ... ...  |   ...    |    ...   | ... | 
+    |   Year   | MME213 | ME221 | ... |
+    |----------|--------|-------|-----|
+    |  2018-19 |    8   |   8   | ... |
+    |  2017-18 |    8   |  12   | ... |
+    | ... ...  |   ...  | ...   | ... | 
 
-    The first column must be named **'Year'**. Otherwise code won't work.
+    First column containes the **academic sessions**.
+    Rest of the columns containes the **total number of questions appeared**.
 
-2. Open 'Task_Distribution.ipynb'
-3. Set the Question Datafile Name and Output file name:
+    **Important The first column must be named **'Year'**. Otherwise code won't work**.
+
+2. Create another sheet in the following format:
+
+    | Roll No. |
+    |    1     |
+    |    2     |
+    |    3     |
+    |    4     |
+    |   ...    |
+
+3. Make sure the question data sheet is before the roll no. sheet. 
+
+4. Open 'Task_Distribution.ipynb'
+5. Set the Question Datafile Name and Output file name:
 
     ```python
     data_file = "ques_data.xlsx"    # Question Datafile name
     output_file = "output.xlsx"     # Output file name
     ```
-4. Run every cells step by step.
-5. Random distribution data will be saved on the same directory in a excel file. 
+6. Run every cells step by step.
+7. Random distribution data will be saved on the same directory in a excel file. 
