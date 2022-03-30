@@ -23,8 +23,6 @@ Solving questions appeared in previous several years is very helpful to take pro
     First column containes the **academic sessions**.
     Rest of the columns containes the **total number of questions appeared**.
 
-    **!!Important!! The first column must be named **'Year'**. Otherwise code won't work**.
-
 2. Create another sheet in the following format:
 
     | Roll No. |
