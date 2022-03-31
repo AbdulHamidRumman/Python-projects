@@ -5,7 +5,7 @@ Solving questions appeared in previous several years is very helpful to take pro
 ### Requirements
 
 * Python
-* Jupyter Notebook
+* Jupyter Notebook [Get Started With Jupyter Notebook in Visual Studio Code](https://youtu.be/h1sAzPojKMg)
 * Python Packages and Modules: pandas, openpyxl, itertools, random
 
 ### Procedure
