@@ -50,6 +50,8 @@ def extract_ques(table):
         for i in range(r): 
             yr = table.loc[i,y]                                         # Each Year
             qs_n = table.loc[i,c]                                       # No. of Questions
+            if qs_n==0:
+                continue
             q_no = [str(j) for j in range(1,qs_n+1)]                    # Creates a string list of question no.
             lst_per = list(itertools.product(*[[c],[yr],q_no]))         # List of all question in 'yr' year in 'c' Course
             for k in lst_per:
