@@ -53,7 +53,12 @@ Create an excel file with two sheets.
 #### Using Jupyter Notebook:
 
 * Open "Task_Distribution.ipynb"
-* Set the Question Datafile Name and Output tile name.
+* Set the Question Datafile Name and Output file name.
+
+    ```python
+    data_file = "ques_data.xlsx"    # Question Datafile name
+    output_file = "output.xlsx"     # Output file name
+    ```
 * Run each cell step by step.
 
 Random distribution data will be saved on the same directory in a excel file.
