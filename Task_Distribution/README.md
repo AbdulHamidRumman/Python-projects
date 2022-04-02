@@ -5,13 +5,16 @@ Solving questions appeared in previous several years is very helpful to take pro
 ### Requirements
 
 * Python
-* Jupyter Notebook [Get Started With Jupyter Notebook in Visual Studio Code](https://youtu.be/h1sAzPojKMg)
-* Python Packages and Modules: pandas, openpyxl, itertools, random
+* Python Modules: pandas, openpyxl, itertools, random
+  [How to Install Python Module](https://youtu.be/7snh_1Hf_TI)
+* Optional:
+    * Jupyter Notebook [Get Started With Jupyter Notebook in Visual Studio Code](https://youtu.be/h1sAzPojKMg)
 
 ### Procedure
 
-1. Create an excel file with two sheets:
+#### Step-1
 
+    Create an excel file with two sheets.
     * 1st sheet contains the question data in the following format:
 
         |   Year   | MME213 | ME221 | ... |
@@ -35,12 +38,23 @@ Solving questions appeared in previous several years is very helpful to take pro
 
      **Make sure the question data sheet is before the roll no. sheet**
 
-4. Open 'Task_Distribution.ipynb'
-5. Set the Question Datafile Name and Output file name:
+#### Step-2
 
-    ```python
-    data_file = "ques_data.xlsx"    # Question Datafile name
-    output_file = "output.xlsx"     # Output file name
-    ```
-6. Run every cells step by step.
-7. Random distribution data will be saved on the same directory in a excel file. 
+#### Using Python File
+
+    * Open "task_distribution.py" script.
+    * Set the Question Datafile Name and Output file name.
+
+        ```python
+        data_file = "ques_data.xlsx"    # Question Datafile name
+        output_file = "output.xlsx"     # Output file name
+        ```
+    * Run Code.
+
+#### Using Jupyter Notebook:
+
+    * Open "Task_Distribution.ipynb"
+    * Set the Question Datafile Name and Output tile name.
+    * Run each cell step by step.
+
+Random distribution data will be saved on the same directory in a excel file.
