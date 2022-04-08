@@ -16,7 +16,7 @@ Solving questions appeared in previous several years is very helpful to take pro
 Create an excel file with two sheets.
 * 1st sheet contains the question data in the following format:
 
-    |   Year   | MME213 | ME221 | ... |
+    |  Session | MME213 | ME221 | ... |
     |----------|--------|-------|-----|
     |  2018-19 |    8   |   8   | ... |
     |  2017-18 |    8   |  12   | ... |
