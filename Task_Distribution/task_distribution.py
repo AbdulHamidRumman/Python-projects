@@ -34,8 +34,8 @@ def extract_ques(table):
         
         Parameters:
         ----------
-        table   -> A dataframe containing "Year" in the first column and "Course Code" in the rest of the columns
-        q_list  -> A list of strings having the questions in the format of "CourseCode-Year-(Ques.No.)"
+        table   -> A dataframe containing "Session" in the first column and "Course Code" in the rest of the columns
+        q_list  -> A list of strings having the questions in the format of "CourseCode-Session-(Ques.No.)"
 
         Returns:
         -------
@@ -43,17 +43,17 @@ def extract_ques(table):
         
     """
     q_list = []
-    y = table.columns.to_list()[0]                                      # Year Column or First Column
+    y = table.columns.to_list()[0]                                      # Session Column or First Column
     crs = table.columns.to_list()[1:]                                   # Rest of the columns containing the course no.
     r = len(table.index)
     for c in crs:                            
         for i in range(r): 
-            yr = table.loc[i,y]                                         # Each Year
+            yr = table.loc[i,y]                                         # Each session
             qs_n = table.loc[i,c]                                       # No. of Questions
             if qs_n==0:
                 continue
             q_no = [str(j) for j in range(1,qs_n+1)]                    # Creates a string list of question no.
-            lst_per = list(itertools.product(*[[c],[yr],q_no]))         # List of all question in 'yr' year in 'c' Course
+            lst_per = list(itertools.product(*[[c],[yr],q_no]))         # List of all question in 'yr' session in 'c' Course
             for k in lst_per:
                 crs_code,year,ques_no = k                                                
                 q_list.append(crs_code+'-'+year+'-'+'('+ques_no+')') 
