@@ -12,11 +12,20 @@ for r in range(runs):
     std_lst = list(range(start,stop+1))
     no_per_grp = int(len(std_lst)/no_grp)
     random.shuffle(std_lst)
-    grps = {} 
-    for i in range(no_grp):
-        grp = random.sample(std_lst,no_per_grp)
-        grps[section+str(i+1)] = grp
-        std_lst = list(set(std_lst)-set(grp))
+    grps = {}
+    i=1 
+    while len(std_lst):
+        try: 
+            grp = random.sample(std_lst,no_per_grp)
+            grps[section+str(i)] = grp
+            i = i+1
+            std_lst = list(set(std_lst)-set(grp))
+        except ValueError:
+            rem = len(std_lst)
+            grp_sample = random.sample(list(grps.keys()),rem)
+            for k in range(rem):
+                grps[grp_sample[k]].append(std_lst[k])
+            std_lst.clear()
     sleep(10/runs)
     sys('cls') 
     for grp in grps.items():
